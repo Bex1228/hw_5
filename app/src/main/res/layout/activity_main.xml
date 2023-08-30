@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@id/tv_register"
+        app:layout_constraintStart_toStartOf="@id/cv_enter_text"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="REGISTER"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_enter_text"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="@id/tv_register"
+        app:layout_constraintTop_toBottomOf="@id/tv_register"
+        app:layout_constraintEnd_toEndOf="@id/tv_register"
+        android:layout_marginTop="26dp"
+        android:layout_marginHorizontal="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/green_white"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="Username"/>
+
+                <EditText
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="260dp"
+                    android:gravity="center"
+                    android:background="@null"
+                   android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"/>
+
+                <EditText
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="260dp"
+                    android:gravity="center"
+                    android:layout_marginStart="42dp"
+                    android:background="@null"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"/>
+
+                <EditText
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="260dp"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="@id/cv_enter_text"
+        app:layout_constraintStart_toStartOf="@id/cv_enter_text"
+        app:layout_constraintTop_toBottomOf="@id/cv_enter_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="26dp"
+        android:text="NEXT"
+        android:drawableEnd="@drawable/ic_next"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="26dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_owel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_owel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        app:layout_constraintStart_toStartOf="@id/image_owel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/image_owel"
+        android:layout_marginBottom="90dp"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
